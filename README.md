@@ -1,11 +1,10 @@
 # Proposed Method
 
 ## Installation
-This code is based on `Python 3.6`, all requirements are written in `requirements.txt`. Additionally, we should install `saleforce-merlion v1.1.1` and `ts_dataset` as Merlion suggested.
+All requirements are written in `pip_requirements.txt` and `conda_requirements.txt`. Additionally, we should install `saleforce-merlion v1.1.1`.
 
 ```
 pip install salesforce-merlion==1.1.1
-pip install -r requirements.txt
 ```
 
 ## Dataset
@@ -28,6 +27,6 @@ we used their newer versions: `SWaT.A1 & A2_Dec2015` and `WADI.A2_19Nov2019`.
 ## Command to run proposed method
 ```
 # dataset_name: IOpsCompetition, UCR, SWaT, WADI)
-python cutAddPaste.py --selected_dataset <dataset_name> --device cuda --seed 2
+python cutAddPaste.py --selected_dataset <dataset_name> --device cuda --seed 42
 ```
 
